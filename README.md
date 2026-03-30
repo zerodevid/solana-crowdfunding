@@ -104,10 +104,15 @@ All fields are **little-endian**.
 - **Rust program code**: ✅ Completed
 - **Deployed to Solana Devnet**: ✅ Completed
 - **Program ID**: `DjpYyLcJBS6HGMu8ZYWgvwUYZNwkV5Bg3pQZhx3rAaJu`
-- **Deployment Signature**: `ssMgkRRFtTSawpFBAoajdxZ8X1F3jJyAgZ6iaGxv64gnVYrBnkFcVwX8bnhyY2b6v59rcnYry51cs8WWTm1Pine`
+- **Deployment Signature**: `25kkZrvaPGMaBYbWWkUqqHd8rNYxWejAwcxxMg2GC36HRXSts4bbZqDf1gUsQXTXjLEofrvZipupQc77Q4G9fuxj`
 - **Test transaction signatures**:
-    - *Create Campaign*: `2JVHBLUf9q1qDaSbU1M3wac6Kg8FSz1kT3sxkEYRrBgQnfrjaNwHBciEdwR2qYWEXeLY5EGiBzThXMikat5Be2o`
-    - *Contribute 0.5 SOL*: `59hHxUEeUyLo6aA4RehnBoTGJHNoyjesHdk1S2bCBzTQAytcMrU7k9fnedfG7emwnkzjLc6StYS7NNrBRWSM6f8x`
-    - *Withdraw (Goal Reached)*: `3kPkRqgRVRuePFdAn5H5sTENSVNaxSqbZTUESi8HkMfhpBFJ8RhKV71qRYhNDwFAS4VD2Q2gPcngxqiDwgKgKwAb`
-    - *Refund (Goal Failed)*: `63wpMDLaGqyYgSZ9X23q2P2d6gLF2jtMc55XwZzK6XVsJtWwWCSTyu5vK3N432Lt92BZYYhYEpivAyRFVrYJ4MY4`
+    - **Skenario 1 - Withdraw (Goal Tercapai)**:
+        - *Create Campaign*: `5gbZbPZtkZyQSY47ia2GPxaZWzDVA7p4bF6dBAzWnTG7pKTN5NkMyMNZV3yaK9fNuBLzPhSZwtMaYEVg6fKjmhS6`
+        - *Contribute 0.1 SOL*: `5zoSKGLNrdn69cqcJezAdGCXkJM79Bm6wchxhVQjbAreCMmZtgmyjXDNxoBFgyHY3ewrZAYkb8FE4ZeJ1x6AFBTc`
+        - *Withdraw*: `5r5Yq4LYzSyTFQZeP75zthxMLbTeFHaVbLfLhhuiVZmsRLTrTpRjUUt9LqLpohxpCpt28WoCa1JupKzeUXqLeKxF`
+    - **Skenario 2 - Refund (Goal Gagal)**:
+        - *Create Campaign*: `51RXf8HMTbpnsLnC8Lkwvq45oHbMvdGwudbWoENv4wTvEXUzkKBCTjXWnniJen8ny1E5mMJtzrAqTcDWPfLxSjLU`
+        - *Contribute 0.05 SOL*: `5TiqcDB3y1Xcy2nMA6LDaomj3XZBRSPyrrPRQwjBwMKjz9MTqhuA9y8TNzHfnkPPWd5vax6vD6ErcpAWs6tXHScP`
+        - *Refund*: `3zG8q4tmaWp2i8xNy9KfnfuJ7bhgwmWyQQF3o1cpYVKwETeYG6HTHA7mpxQov5W1xmyo6kSzXSSPcLqAtTzkFCP6`
+
 
