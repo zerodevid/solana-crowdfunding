@@ -73,6 +73,11 @@ impl Processor {
             return Err(ProgramError::AccountDataTooSmall);
         }
 
+        let existing_campaign = Campaign::try_from_slice_unchecked(&campaign_account.data.borrow())?;
+        if existing_campaign.goal != 0 {
+            return Err(ProgramError::AccountAlreadyInitialized);
+        }
+
         let clock = Clock::get()?;
         if deadline <= clock.unix_timestamp {
             return Err(CrowdfundingError::DeadlineInPast.into());
