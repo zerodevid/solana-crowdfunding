@@ -55,3 +55,25 @@ impl Contribution {
         Self::try_from_slice(data).map_err(|_| ProgramError::InvalidAccountData)
     }
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+    use borsh::BorshSerialize;
+
+    #[test]
+    fn test_campaign_serialized_size() {
+        use solana_program::pubkey::Pubkey;
+        let c = Campaign {
+            creator: Pubkey::default(),
+            goal: 1000,
+            raised: 0,
+            deadline: 12345,
+            claimed: false,
+        };
+        let mut buf = Vec::new();
+        c.serialize(&mut buf).unwrap();
+        println!("Campaign borsh size = {} bytes, LEN = {}", buf.len(), Campaign::LEN);
+        assert_eq!(buf.len(), Campaign::LEN, "LEN mismatch!");
+    }
+}

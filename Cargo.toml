@@ -9,6 +9,14 @@ crate-type = ["cdylib", "lib"]
 [features]
 no-entrypoint = []
 test-bpf = []
+custom-heap = []
+custom-panic = []
+
+[lints.rust]
+unexpected_cfgs = { level = "allow", check-cfg = [
+    'cfg(target_os, values("solana"))',
+    'cfg(feature, values("custom-heap", "custom-panic"))',
+] }
 
 [dependencies]
 solana-program = "1.18.26"
