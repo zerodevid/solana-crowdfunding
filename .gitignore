@@ -24,3 +24,8 @@ test-ledger/
 # Environment variables
 .env
 .env.*
+
+# Node / JS
+node_modules/
+package-lock.json
+yarn.lock
